@@ -23,30 +23,30 @@ function showhide(idVar) {
     };
 }
 
-/usr/local / share / tessdata /
 
-    function showhideByClass(classVar) {
-        const collection = document.getElementsByClassName(classVar);
 
-        var flag = false;
-        for (let i = 0; i < collection.length; i++) {
-            if (collection[i].style.display == 'none') {
-                flag = true;
-            }
+function showhideByClass(classVar) {
+    const collection = document.getElementsByClassName(classVar);
+
+    var flag = false;
+    for (let i = 0; i < collection.length; i++) {
+        if (collection[i].style.display == 'none') {
+            flag = true;
         }
-
-        var status
-        if (flag == true) {
-            status = "block"
-        } else {
-            status = "none"
-        }
-
-        for (let i = 0; i < collection.length; i++) {
-            collection[i].style.display == status
-        }
-
     }
+
+    var status
+    if (flag == true) {
+        status = "block"
+    } else {
+        status = "none"
+    }
+
+    for (let i = 0; i < collection.length; i++) {
+        collection[i].style.display == status
+    }
+
+}
 
 
 function showhideAll(idVar, classVar, labelShow, labelHide) {
