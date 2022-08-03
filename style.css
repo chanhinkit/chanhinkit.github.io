@@ -1,0 +1,242 @@
+:root {
+    /* define variables for css, 
+    variable must begin with -- */
+
+    --bgcolor: #E5DDD0;
+    --colorhead: #00206A;
+    --royalblue: #1B3FAB;
+    /*Royal Blue*/
+    --color1: #A8BDD7;
+    --color2: #889F8B;
+
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+h2 {
+    color: var(--colorhead);
+    text-shadow: 1px 1px 1px white;
+}
+
+h3 {
+    color: white
+}
+
+p {
+    padding-top: 15px;
+    padding-left: 4px
+}
+
+/* Slider CSS setting */
+/* .slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+} */
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+/*The main head of the HTML*/
+
+.Ctrl {
+    padding-left: 5pt;
+    border-color: white;
+    background-color: white;
+    border-radius: 7px;
+    max-width: 1200px;
+    /* position: fixed; */
+    /* z-index: 999; */
+}
+
+.title {
+    padding-left: 5pt
+}
+
+.btnShown {
+    background-color: var(--colorhead);
+    color: white;
+    border: 20px;
+    border-color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    box-shadow: 0px 0px 2px 2px var(--colorhead);
+}
+
+.btnShown:hover {
+    background-color: var(--royalblue);
+    transition: 0.2s;
+}
+
+.btnHidden {
+    background-color: red;
+    color: white;
+    border: 20px;
+    border-color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    box-shadow: 0px 0px 2px 2px red;
+}
+
+.btnHidden:hover {
+    background-color: pink;
+    box-shadow: 0px 0px 2px 2px pink;
+    transition: 0.2s;
+}
+
+.btnTable {
+    padding-left: 5px;
+    border-collapse: collapse;
+    border-color: var(--bgcolor);
+}
+
+/* 
+.btnRow {
+    border-color: var(--bgcolor);
+    border-collapse: collapse;
+    background-color: var(--bgcolor);
+    border: none;
+} */
+
+
+
+
+.QMTable {
+    border-color: var(--bgcolor);
+    border-style: none;
+}
+
+
+
+
+
+/* Class structure:
+1.      EachRow:
+
+        Table cell level:   RowOdd/RowEven/RowYear > RowQ10 >
+        div level:          BBox year2022Q1BBox
+                          > QBox year2022Q10QBox
+                          + MBox year2022Q10MBox
+2.      EachColumn:
+        Table cell level:   year20 22 */
+
+
+
+.RowYear {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 0vw;
+    vertical-align: middle;
+    border-radius: 8px;
+    border-style: none;
+    border-color: var(--bgcolor);
+    box-shadow: none;
+    font-stretch: white;
+    background: var(--colorhead);
+}
+
+.RowOdd {
+    padding-left: 10px;
+    line-height: 0vw;
+    vertical-align: top;
+    border-radius: 8px;
+    border-style: none;
+    border-color: var(--bgcolor);
+    box-shadow: none;
+    padding: 0px;
+    font-stretch: white;
+    background: var(--color1);
+}
+
+.RowEven {
+    padding-left: 10px;
+    line-height: 0vw;
+    vertical-align: top;
+    border-radius: 8px;
+    border-style: none;
+    border-color: var(--bgcolor);
+    box-shadow: none;
+    padding: 0px;
+    font-stretch: white;
+    background: var(--color2);
+}
+
+.yearNum {
+    height: 10px;
+    color: white;
+}
+
+.QMCells {
+    border-radius: 8px;
+    border-style: none;
+    border-color: var(--bgcolor);
+    empty-cells: hide;
+}
+
+
+.BBox {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 10px 8px rgba(0, 0, 0, 0.12);
+    min-height: 10vh;
+    min-width: 10vh;
+    margin: 5px 5px;
+    background: white;
+    border-radius: 8px;
+    border-style: none;
+    vertical-align: top;
+
+}
+
+.ItemsTitle {
+    font-size: 10px;
+}
+
+.ItemsEnd {
+    font-size: 5px;
+}
+
+.QBox {
+    font-size: 10px;
+    background: white;
+    border-radius: 8px;
+}
+
+.MBox {
+    font-size: 10px;
+    display: block;
+    border-radius: 8px;
+}
